@@ -1,10 +1,5 @@
-function maiorOuIgual (a: number, b: any):boolean{
-  if(a >= b){
-    return true;
-  }
-  return false;
+function formatarValorDecimal(valorDecimal: number): string{
+    return valorDecimal.toFixed(2).toString().replace(".", ",");
 }
 
-console.log(maiorOuIgual(0, 0)) // retornará true
-console.log(maiorOuIgual(2, 10)) // retornará false
-console.log(maiorOuIgual(5, 1)) // retornará true
+console.log(`Valor em reais: ${formatarValorDecimal(10.72 + 0.15)}`);

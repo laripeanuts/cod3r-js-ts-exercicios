@@ -1,6 +1,5 @@
-let calcularSalario = (horasTrabalhadas: number, valorHora: number):string => {
-  let salario = horasTrabalhadas * valorHora
-  return `Salário igual a R$ ${salario}`;
+function exponencial (base: number, expoente: number) {
+  return Math.pow(base, expoente);
 }
 
-console.log(calcularSalario(150, 40.5)); // retornará "Salário igual a R$ 6075"
+console.log(exponencial(2, 10));

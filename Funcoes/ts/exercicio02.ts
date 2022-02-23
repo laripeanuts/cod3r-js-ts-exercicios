@@ -1,4 +1,12 @@
-let converterIdadeEmAnosParaDias = (idade: number) => idade * 365;
-
-console.log(converterIdadeEmAnosParaDias(25)); // retornará 9125 
-console.log(converterIdadeEmAnosParaDias(70)); // retornará 25550
+let qualTriangulo = function (x: number, y: number, z: number) {
+  if (x == y && x == z) {
+      return "Equilátero"
+  } else if (x == y || y == z || z == x) {
+      return "Isósceles";
+  } else {
+      return "Escaleno";
+  }
+}
+console.log(qualTriangulo(5, 5, 5));
+console.log(qualTriangulo(5, 5, 4));
+console.log(qualTriangulo(5, 2, 4)); 
